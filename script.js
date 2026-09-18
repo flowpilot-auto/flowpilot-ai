@@ -1,13 +1,1 @@
-document.getElementById("year").textContent = new Date().getFullYear();
-
-document.getElementById("trialForm").addEventListener("submit", function (event) {
-  event.preventDefault();
-  const button = this.querySelector("button");
-  const original = button.innerHTML;
-  button.innerHTML = "Demo form received ✓";
-  button.disabled = true;
-  setTimeout(() => {
-    button.innerHTML = original;
-    button.disabled = false;
-  }, 3000);
-});
+document.getElementById('trialForm').addEventListener('submit',e=>{e.preventDefault();const s=document.getElementById('status');s.textContent='Demo request received ✓ — submission connection is next.';setTimeout(()=>s.textContent="Demo form — we'll connect submissions next.",3500)});
