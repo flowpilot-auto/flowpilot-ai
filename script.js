@@ -7,9 +7,11 @@ if (menuBtn && nav) {
     menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
   });
 
-  nav.querySelectorAll("a").forEach((a) =>
-    a.addEventListener("click", () => nav.classList.remove("open"))
-  );
+  nav.querySelectorAll("a").forEach((a) => {
+    a.addEventListener("click", () => {
+      nav.classList.remove("open");
+    });
+  });
 }
 
 const form = document.getElementById("trialForm");
@@ -23,17 +25,16 @@ if (form && status) {
     e.preventDefault();
 
     const submitButton = form.querySelector('button[type="submit"]');
-
     const formData = new FormData(form);
 
-    const data = {
-      name: formData.get("name"),
-      business: formData.get("business"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      type: formData.get("type"),
-      process: formData.get("process"),
-    };
+    const body = new URLSearchParams();
+
+    body.append("name", formData.get("name"));
+    body.append("business", formData.get("business"));
+    body.append("email", formData.get("email"));
+    body.append("phone", formData.get("phone"));
+    body.append("type", formData.get("type"));
+    body.append("process", formData.get("process"));
 
     try {
       submitButton.disabled = true;
@@ -42,10 +43,7 @@ if (form && status) {
 
       const response = await fetch(WEBHOOK_URL, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
+        body: body,
       });
 
       if (!response.ok) {
@@ -63,7 +61,8 @@ if (form && status) {
         "Something went wrong while sending your request. Please try again.";
     } finally {
       submitButton.disabled = false;
-      submitButton.innerHTML = 'Request a free trial <span>→</span>';
+      submitButton.innerHTML =
+        'Request a free trial <span>→</span>';
     }
   });
 }
