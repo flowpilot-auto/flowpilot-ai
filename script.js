@@ -18,7 +18,7 @@ const form = document.getElementById("trialForm");
 const status = document.getElementById("formStatus");
 
 const WEBHOOK_URL =
-  "https://imagination-sum-holdings-machine.trycloudflare.com/webhook/fumba-trial-request";
+  "https://meets-complicated-dirt-requests.trycloudflare.com/webhook/fumba-trial-request";
 
 if (form && status) {
   form.addEventListener("submit", async (e) => {
