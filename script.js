@@ -138,7 +138,8 @@ if (bookingForm && bookingStatus) {
         const value = String(hour).padStart(2, "0") + ":" +
           String(minute).padStart(2, "0");
         const start = adelaideWallToUtc(selected, value);
-        if (!start || start.getTime() < now.getTime() + 24 * 60 * 60 * 1000) continue;
+        if (!start || start.getTime() < now.getTime() + 24 * 60 * 60 * 1000 ||
+            start.getTime() > now.getTime() + 14 * 24 * 60 * 60 * 1000) continue;
         const label = new Intl.DateTimeFormat("en-AU", {
           hour: "numeric", minute: "2-digit", hour12: true, timeZone: "UTC",
         }).format(new Date(Date.UTC(2026, 0, 1, hour, minute)));
@@ -168,7 +169,8 @@ if (bookingForm && bookingStatus) {
         weekday === 0 || weekday === 6 ||
         ![0, 30].includes(Number(time.slice(3))) ||
         Number(time.slice(0, 2)) < 10 || Number(time.slice(0, 2)) > 15 ||
-        start.getTime() < Date.now() + 24 * 60 * 60 * 1000) {
+        start.getTime() < Date.now() + 24 * 60 * 60 * 1000 ||
+        start.getTime() > Date.now() + 14 * 24 * 60 * 60 * 1000) {
       setBookingStatus("Please choose another weekday and time at least 24 hours ahead.", "error");
       return;
     }
