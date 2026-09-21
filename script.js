@@ -10,6 +10,7 @@ if (menuBtn && nav) {
   nav.querySelectorAll("a").forEach((a) => {
     a.addEventListener("click", () => {
       nav.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
     });
   });
 }
