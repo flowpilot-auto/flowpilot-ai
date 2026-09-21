@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Tiling and home works enquiry form powered by Fumba Automations.">
+  <meta name="theme-color" content="#0b1e38">
+  <title>Tiling & Home Works Enquiry — Fumba Automations</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="tiler-trial.css">
+</head>
+<body class="trade-trial-page">
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="Fumba Automations home">
+      <span class="brand-mark">F</span>
+      <span>Fumba <b>Automations</b></span>
+    </a>
+    <a class="trial-back" href="index.html">← Back to Fumba Automations</a>
+  </div>
+</header>
+
+<main>
+<section class="trade-hero">
+  <div class="trade-shell">
+    <div class="trade-copy">
+      <div class="eyebrow">TILING & HOME WORKS — TRIAL ENQUIRY SYSTEM</div>
+      <h1>Tell us about the job.</h1>
+      <p>Share the job details below so the enquiry can be recorded, organised and passed on for review.</p>
+
+      <div class="trade-flow">
+        <div><span>1</span><strong>Submit enquiry</strong><small>Job details are captured clearly.</small></div>
+        <div><span>2</span><strong>Enquiry recorded</strong><small>The lead is added to the job CRM.</small></div>
+        <div><span>3</span><strong>Follow-up</strong><small>The business receives the details for review.</small></div>
+      </div>
+
+      <div class="trade-note">
+        <strong>Trial system:</strong> submitting this form is not a quote, confirmed booking, price or guarantee of availability.
+      </div>
+    </div>
+
+    <form id="tilerEnquiryForm" class="trade-form">
+      <div class="form-title">
+        <span class="pill blue">LIVE TRIAL</span>
+        <h2>Tiling & Home Works Enquiry</h2>
+        <p>Fields marked * are required.</p>
+      </div>
+
+      <div class="two">
+        <label>Full name *
+          <input name="name" required autocomplete="name" placeholder="John Smith">
+        </label>
+        <label>Email *
+          <input name="email" type="email" required autocomplete="email" placeholder="john@example.com">
+        </label>
+      </div>
+
+      <div class="two">
+        <label>Phone *
+          <input name="phone" type="tel" required autocomplete="tel" placeholder="04xx xxx xxx">
+        </label>
+        <label>Preferred contact *
+          <select name="preferredContact" required>
+            <option value="" selected disabled>Select one</option>
+            <option>Phone call</option>
+            <option>SMS / text</option>
+            <option>Email</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="two">
+        <label>Suburb *
+          <input name="suburb" required autocomplete="address-level2" placeholder="Prospect">
+        </label>
+        <label>Postcode *
+          <input name="postcode" required inputmode="numeric" maxlength="4" autocomplete="postal-code" placeholder="5082">
+        </label>
+      </div>
+
+      <label>What type of work is it? *
+        <select name="jobType" required>
+          <option value="" selected disabled>Select a job type</option>
+          <option>Bathroom tiling</option>
+          <option>Floor tiling</option>
+          <option>Wall tiling</option>
+          <option>Kitchen splashback</option>
+          <option>Outdoor tiling</option>
+          <option>Tile repair / regrouting</option>
+          <option>Waterproofing</option>
+          <option>Renovation / general house work</option>
+          <option>Other</option>
+        </select>
+      </label>
+
+      <label>Tell us what needs doing *
+        <textarea name="description" required placeholder="Describe the area, current condition and the work you want done."></textarea>
+      </label>
+
+      <label>When would you like the work done? *
+        <select name="urgency" required>
+          <option value="" selected disabled>Select a timeframe</option>
+          <option>ASAP</option>
+          <option>Within 1-2 weeks</option>
+          <option>Within a month</option>
+          <option>Flexible / future project</option>
+          <option>Just getting a quote</option>
+        </select>
+      </label>
+
+      <label class="consent">
+        <input type="checkbox" required>
+        <span>I agree that these details can be used to respond to this enquiry.</span>
+      </label>
+
+      <button class="btn full" type="submit">Send enquiry <span>→</span></button>
+      <p id="tilerFormStatus" class="trade-status">Your details will be sent securely to the enquiry workflow.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="shell footer-grid">
+    <div>
+      <a class="brand" href="index.html"><span class="brand-mark">F</span><span>Fumba <b>Automations</b></span></a>
+      <p>Automation that fits the way your business works.</p>
+    </div>
+    <div class="footer-links"><a href="index.html">Main site</a><a href="privacy.html">Privacy</a></div>
+    <div class="copyright">© 2026 Fumba Automations</div>
+  </div>
+</footer>
+
+<script src="tiler-trial.js"></script>
+</body>
+</html>
