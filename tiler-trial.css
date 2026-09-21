@@ -1,0 +1,31 @@
+.trade-trial-page{background:#f6f8fb}
+.trial-back{font-size:11px;font-weight:750;color:#5f7287}
+.trade-hero{padding:74px 0 90px}
+.trade-shell{width:min(1100px,calc(100% - 40px));margin:auto;display:grid;grid-template-columns:.82fr 1.18fr;gap:70px;align-items:start}
+.trade-copy{position:sticky;top:118px;padding-top:18px}
+.trade-copy h1{font-size:52px;letter-spacing:-.05em;line-height:1.02;margin:0 0 18px;color:#0b1e38}
+.trade-copy>p{font-size:15px;line-height:1.75;color:#66798e;max-width:470px}
+.trade-flow{display:grid;gap:12px;margin:34px 0}
+.trade-flow>div{display:grid;grid-template-columns:36px 1fr;column-gap:12px;align-items:center;padding:15px;border:1px solid #dce5ee;border-radius:11px;background:#fff}
+.trade-flow span{grid-row:1/3;width:36px;height:36px;display:grid;place-items:center;border-radius:9px;background:#edf4ff;color:#2670e9;font-size:10px;font-weight:900}
+.trade-flow strong{font-size:11px}
+.trade-flow small{font-size:9px;color:#7b8c9d;margin-top:4px}
+.trade-note{border-left:3px solid #2670e9;padding:12px 14px;background:#eef4fb;border-radius:0 9px 9px 0;font-size:9px;line-height:1.6;color:#6d8094}
+.trade-note strong{color:#0b1e38}
+.trade-form{background:#fff;border:1px solid #dce5ee;border-radius:16px;padding:31px;box-shadow:0 22px 55px rgba(20,48,75,.09)}
+.form-title{margin-bottom:26px}
+.form-title h2{font-size:25px;letter-spacing:-.035em;margin:12px 0 7px}
+.form-title p{font-size:9px;color:#8d9aa8;margin:0}
+.trade-form label{font-size:9px;font-weight:800;color:#21364d}
+.trade-form input,.trade-form textarea,.trade-form select{display:block;width:100%;margin-top:7px;border:1px solid #d7e1ea;border-radius:8px;padding:13px;background:#fff;color:#0b1e38;font:inherit;font-size:10px;outline:none}
+.trade-form select{appearance:auto}
+.trade-form textarea{height:125px;resize:vertical}
+.trade-form input:focus,.trade-form textarea:focus,.trade-form select:focus{border-color:#2670e9;box-shadow:0 0 0 3px rgba(38,112,233,.08)}
+.trade-form .consent{display:flex;gap:9px;align-items:flex-start;font-weight:500;color:#6e8093;line-height:1.5;margin-top:4px}
+.trade-form .consent input{width:auto;margin:2px 0 0}
+.trade-status{text-align:center;color:#8b99a7;font-size:9px;line-height:1.5;margin:11px 0 0}
+.trade-status.success{color:#1d8b59;font-weight:700}
+.trade-status.error{color:#c23949;font-weight:700}
+.trade-form button[disabled]{opacity:.7;cursor:not-allowed}
+@media(max-width:850px){.trade-shell{grid-template-columns:1fr;gap:38px}.trade-copy{position:static}.trade-copy h1{font-size:43px}}
+@media(max-width:600px){.trade-shell{width:calc(100% - 28px)}.trade-hero{padding:45px 0 65px}.trade-copy h1{font-size:37px}.trade-form{padding:22px}.trial-back{font-size:9px}}
