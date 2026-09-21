@@ -18,7 +18,7 @@ const form = document.getElementById("trialForm");
 const status = document.getElementById("formStatus");
 
 const WEBHOOK_URL =
-  "https://meets-complicated-dirt-requests.trycloudflare.com/webhook/fumba-trial-request";
+  "https://hook.us2.make.com/7v3xf2j2f53529cwf6wo1j7q3nulypu9";
 
 if (form && status) {
   form.addEventListener("submit", async (e) => {
