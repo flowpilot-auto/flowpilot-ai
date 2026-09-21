@@ -139,7 +139,7 @@ if (bookingForm && bookingStatus) {
         const start = adelaideWallToUtc(selected, value);
         if (!start || start.getTime() < now.getTime() + 24 * 60 * 60 * 1000) continue;
         const label = new Intl.DateTimeFormat("en-AU", {
-          hour: "numeric", minute: "2-digit", hour12: true,
+          hour: "numeric", minute: "2-digit", hour12: true, timeZone: "UTC",
         }).format(new Date(Date.UTC(2026, 0, 1, hour, minute)));
         timeField.add(new Option(label, value));
       }
