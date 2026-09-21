@@ -30,3 +30,23 @@
 .booking-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 @media(max-width:900px){.booking-grid{grid-template-columns:1fr;gap:35px}.booking-copy h2{max-width:680px}.booking-form{max-width:760px}}
 @media(max-width:600px){.booking-grid{gap:25px}.booking-form{padding:22px 18px}.booking-facts span{align-items:flex-start}.booking-facts b{white-space:nowrap}}
+
+/* Readable type and interaction details across the site */
+.nav-links{font-size:13px}
+.btn{font-size:13px;transition:background-color .16s ease,box-shadow .16s ease,transform .16s ease}
+.btn:hover{background:#185cc5;box-shadow:0 6px 18px rgba(38,112,233,.2)}
+.btn.outline:hover,.btn.light-btn:hover{background:#f0f6ff;color:#155bc8}
+.btn:focus-visible,a:focus-visible,summary:focus-visible,.menu-btn:focus-visible{outline:3px solid #8ebaff;outline-offset:3px}
+.eyebrow{font-size:11px}
+.trust-row,.trial-points{font-size:12px}
+.card p,.dark-section p,.section-heading p,.trial-grid>div>p{font-size:14px}
+.value-grid p,.process-grid p,.proof-grid p,.faq details p,.demo-note{font-size:12px}
+.value-grid h3,.process-grid h3{font-size:17px}
+.faq summary,.proof-grid span{font-size:14px}
+.pill{font-size:9px}
+.text-link{font-size:12px}
+.trial-grid form label{font-size:12px}
+.trial-grid form input,.trial-grid form textarea{font-size:14px}
+#formStatus{font-size:12px;line-height:1.5}
+.footer-links{font-size:12px}
+.footer-grid p,.copyright{font-size:11px}
