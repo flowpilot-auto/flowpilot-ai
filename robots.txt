@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://flowpilot-auto.github.io/flowpilot-ai/sitemap.xml
