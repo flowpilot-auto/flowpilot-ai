@@ -2,4 +2,4 @@
 
 Business Automation Systems for service businesses.
 
-Live site: https://flowpilot-auto.github.io/flowpilot-ai/
+Live site: https://fumexalade.com/
