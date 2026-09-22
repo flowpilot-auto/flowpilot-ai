@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://flowpilot-auto.github.io/flowpilot-ai/sitemap.xml
+Sitemap: https://fumexalade.com/sitemap.xml
